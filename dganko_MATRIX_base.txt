@@ -1,0 +1,201 @@
+hostname
+mtrx-node03pd.dcm.senecacollege.ca
+disk/parition size, usage, and mount points
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 00:1d:d8:b7:1c:93 brd ff:ff:ff:ff:ff:ff
+IP address, broadcast, and netmask for each active device
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet 10.102.108.5/32 scope global lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 00:1d:d8:b7:1c:93 brd ff:ff:ff:ff:ff:ff
+    inet 10.102.108.13/26 brd 10.102.108.63 scope global noprefixroute eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::21d:d8ff:feb7:1c93/64 scope link 
+       valid_lft forever preferred_lft forever
+OS version/release level, kernel version used
+3.10.0-1127.18.2.el7.x86_64 #1 SMP Sun Jul 26 15:27:06 UTC 2020 GNU/Linux
+security mode
+SELinux status:                 disabled
+firewall config
+iptables v1.4.21: can't initialize iptables table `filter': Permission denied (you must be root)
+Perhaps iptables or your kernel needs to be upgraded.
+list of active repositories
+Loaded plugins: fastestmirror
+Repodata is over 2 weeks old. Install yum-cron? Or run: yum makecache fast
+Loading mirror speeds from cached hostfile
+ * epel: linux-mirrors.fnal.gov
+ * remi-php72: mirror.pit.teraswitch.com
+ * remi-safe: mirror.pit.teraswitch.com
+repo id                            repo name                              status
+!WANdisco-git/7/x86_64             WANdisco Distribution of git              350
+!base/7/x86_64                     CentOS-7 - Base                        10,070
+!epel/x86_64                       Extra Packages for Enterprise Linux 7  13,426
+!extras/7/x86_64                   CentOS-7 - Extras                         413
+!ius/x86_64                        IUS for Enterprise Linux 7 - x86_64       487
+!mysql-connectors-community/x86_64 MySQL Connectors Community                165
+!mysql-tools-community/x86_64      MySQL Tools Community                     115
+!mysql57-community/x86_64          MySQL 5.7 Community Server                444
+!remi-php72                        Remi's PHP 7.2 RPM repository for Ente    412
+!remi-safe                         Safe Remi's RPM repository for Enterpr  3,842
+!updates/7/x86_64                  CentOS-7 - Updates                      1,112
+repolist: 30,836
+number of software packages installed
+Repodata is over 2 weeks old. Install yum-cron? Or run: yum makecache fast
+1143
+name of software packages installed
+Loaded plugins: fastestmirror
+Command line error: no such option: --installed
+Usage: yum [options] COMMAND
+
+List of Commands:
+
+check          Check for problems in the rpmdb
+check-update   Check for available package updates
+clean          Remove cached data
+deplist        List a package's dependencies
+distribution-synchronization Synchronize installed packages to the latest available versions
+downgrade      downgrade a package
+erase          Remove a package or packages from your system
+fs             Acts on the filesystem data of the host, mainly for removing docs/lanuages for minimal hosts.
+fssnapshot     Creates filesystem snapshots, or lists/deletes current snapshots.
+groups         Display, or use, the groups information
+help           Display a helpful usage message
+history        Display, or use, the transaction history
+info           Display details about a package or group of packages
+install        Install a package or packages on your system
+list           List a package or groups of packages
+load-transaction load a saved transaction from filename
+makecache      Generate the metadata cache
+provides       Find what package provides the given value
+reinstall      reinstall a package
+repo-pkgs      Treat a repo. as a group of packages, so we can install/remove all of them
+repolist       Display the configured software repositories
+search         Search package details for the given string
+shell          Run an interactive yum shell
+swap           Simple way to swap packages, instead of using shell
+update         Update a package or packages on your system
+update-minimal Works like upgrade, but goes to the 'newest' package match which fixes a problem that affects your system
+updateinfo     Acts on repository update information
+upgrade        Update packages taking obsoletes into account
+version        Display a version for the machine and/or available repos.
+
+
+dns server configured
+# Generated by NetworkManager
+search dcm.senecacollege.ca senecacollege.ca
+nameserver 10.102.20.20
+nameserver 10.101.20.20
+nameserver 10.101.100.41
+list of active shell users
+root:x:0:0:root@mtrx-node03pd.dcm:/root:/bin/bash
+rizwan:x:501:1000:Rizwan Haq:/home0/rizwan:/bin/bash
+mehrdad:x:502:1001:Mehrdad Ziaei:/home0/mehrdad:/bin/bash
+alex:x:503:1002:Alex Salagean:/home0/alex:/bin/bash
+olga:x:504:1003:Olga Gudnova:/home0/olga:/bin/bash
+postgres:x:26:26:PostgreSQL Server:/var/lib/pgsql:/bin/bash
+admin:x:210:100:matrix mwho admin:/home0/admin:/bin/bash
+date the os was first installed
+Install Date: Fri 03 Nov 2017 01:47:01 PM EDT
+hardware details: cpu, main memory size, swap memory config, and devices
+CPU info
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    1
+Core(s) per socket:    4
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 63
+Model name:            Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
+Stepping:              2
+CPU MHz:               2297.340
+BogoMIPS:              4594.68
+Hypervisor vendor:     Microsoft
+Virtualization type:   full
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              25600K
+NUMA node0 CPU(s):     0-3
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx lm constant_tsc rep_good nopl eagerfpu pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm fsgsbase bmi1 avx2 smep bmi2 erms xsaveopt
+memory size and swap memory size
+              total        used        free      shared  buff/cache   available
+Mem:        3843864      785816     1503668       10832     1554380     2761728
+Swap:       4194300           0     4194300
+Filename				Type		Size	Used	Priority
+/dev/dm-1                              	partition	4194300	0	-2
+devices
+NAME            MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda               8:0    0   60G  0 disk 
+├─sda1            8:1    0  200M  0 part /boot/efi
+├─sda2            8:2    0    1G  0 part /boot
+└─sda3            8:3    0 58.8G  0 part 
+  ├─centos-root 253:0    0 49.8G  0 lvm  /
+  ├─centos-swap 253:1    0    4G  0 lvm  [SWAP]
+  └─centos-tmp  253:2    0    5G  0 lvm  /tmp
+services currently running
+proc-sys-fs-binfmt_misc.automount                                                                                                                       loaded active running   Arbitrary Executable File Formats File System Automount Point
+session-121.scope                                                                                                                                       loaded active running   Session 121 of user mjafari22
+session-139.scope                                                                                                                                       loaded active running   Session 139 of user dganko
+session-154.scope                                                                                                                                       loaded active running   Session 154 of user gsidhu19
+session-157.scope                                                                                                                                       loaded active running   Session 157 of user alow5
+session-184.scope                                                                                                                                       loaded active running   Session 184 of user sk165
+session-185.scope                                                                                                                                       loaded active running   Session 185 of user hong.huang
+session-217.scope                                                                                                                                       loaded active running   Session 217 of user pbrahmbhatt5
+session-223.scope                                                                                                                                       loaded active running   Session 223 of user bipci
+session-232.scope                                                                                                                                       loaded active running   Session 232 of user nlevesque1
+session-235.scope                                                                                                                                       loaded active running   Session 235 of user ajmarcelino
+session-239.scope                                                                                                                                       loaded active running   Session 239 of user cmascarinas
+session-240.scope                                                                                                                                       loaded active running   Session 240 of user jvfernandes-dos-sant
+session-244.scope                                                                                                                                       loaded active running   Session 244 of user kjalialy
+session-245.scope                                                                                                                                       loaded active running   Session 245 of user pmahida1
+session-246.scope                                                                                                                                       loaded active running   Session 246 of user jkuang10
+session-247.scope                                                                                                                                       loaded active running   Session 247 of user gmartinez-de-oliveir
+session-54.scope                                                                                                                                        loaded active running   Session 54 of user fardad.soleimanloo
+session-89.scope                                                                                                                                        loaded active running   Session 89 of user lfahmi1
+session-90.scope                                                                                                                                        loaded active running   Session 90 of user thnguyen35
+auditd.service                                                                                                                                          loaded active running   Security Auditing Service
+crond.service                                                                                                                                           loaded active running   Command Scheduler
+dbus.service                                                                                                                                            loaded active running   D-Bus System Message Bus
+ds_agent.service                                                                                                                                        loaded active running   Trend Micro Deep Security Agent
+fail2ban.service                                                                                                                                        loaded active running   Fail2Ban Service
+getty@tty1.service                                                                                                                                      loaded active running   Getty on tty1
+gssproxy.service                                                                                                                                        loaded active running   GSSAPI Proxy Daemon
+httpd.service                                                                                                                                           loaded active running   The Apache HTTP Server
+irqbalance.service                                                                                                                                      loaded active running   irqbalance daemon
+lvm2-lvmetad.service                                                                                                                                    loaded active running   LVM2 metadata daemon
+NetworkManager.service                                                                                                                                  loaded active running   Network Manager
+nslcd.service                                                                                                                                           loaded active running   Naming services LDAP client daemon.
+ntpd.service                                                                                                                                            loaded active running   Network Time Service
+polkit.service                                                                                                                                          loaded active running   Authorization Manager
+postfix.service                                                                                                                                         loaded active running   Postfix Mail Transport Agent
+rpc-rquotad.service                                                                                                                                     loaded active running   Remote quota server
+rpcbind.service                                                                                                                                         loaded active running   RPC bind service
+rsyslog.service                                                                                                                                         loaded active running   System Logging Service
+snmpd.service                                                                                                                                           loaded active running   Simple Network Management Protocol (SNMP) Daemon.
+sshd.service                                                                                                                                            loaded active running   OpenSSH server daemon
+systemd-journald.service                                                                                                                                loaded active running   Journal Service
+systemd-logind.service                                                                                                                                  loaded active running   Login Service
+systemd-udevd.service                                                                                                                                   loaded active running   udev Kernel Device Manager
+tuned.service                                                                                                                                           loaded active running   Dynamic System Tuning Daemon
+ypbind.service                                                                                                                                          loaded active running   NIS/YP (Network Information Service) Clients to NIS Domain Binder
+dbus.socket                                                                                                                                             loaded active running   D-Bus System Message Bus Socket
+lvm2-lvmetad.socket                                                                                                                                     loaded active running   LVM2 metadata daemon socket
+rpcbind.socket                                                                                                                                          loaded active running   RPCbind Server Activation Socket
+systemd-journald.socket                                                                                                                                 loaded active running   Journal Socket
+systemd-udevd-control.socket                                                                                                                            loaded active running   udev Control Socket
+systemd-udevd-kernel.socket                                                                                                                             loaded active running   udev Kernel Socket
+service currently not running
+178 loaded units listed. Pass --all to see loaded but inactive units, too.
