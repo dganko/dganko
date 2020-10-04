@@ -1,0 +1,73 @@
+#!/bin/bash
+
+exec 3>&1 4>&2
+trap 'exec 2>&4 1>&3' 0 1 2 3
+exec 1>dganko_VM1_base.txt 2>&1
+
+
+#Hostname
+echo hostname
+hostname
+
+#disk/partition size, usage, and mount points
+echo disk/parition size, usage, and mount points
+ip link show
+
+#IP address,broadcast, and netmask for each active device
+echo IP address, broadcast, and netmask for each active device
+ip a
+
+#OS version/release level, kernel verson used
+echo OS version/release level, kernel version used
+uname -o -r -v
+
+#security mode
+echo security mode
+sestatus
+
+#firewall configuration 
+echo firewall config
+iptables -L -n -v
+
+#list of active repositories
+echo list of active repositories
+yum repolist enabled
+
+#number of software packages installed
+echo number of software packages installed
+yum list installed | wc -l
+
+#name of software packages installed
+echo name of software packages installed
+yum list --installed
+
+#dns server configured
+echo dns server configured 
+cat /etc/resolv.conf
+
+#list of active shell users
+echo list of active shell users
+cat /etc/passwd | grep /bin/bash
+
+#date the os was first isntalled
+echo date the os was first installed
+rpm -qi basesystem | grep 'Install Date'
+
+#hardware details: cpu, main memory size, swap memory config, and devices
+echo hardware details: cpu, main memory size, swap memory config, and devices
+echo CPU info
+lscpu
+
+echo memory size and swap memory size
+free && swapon -s
+
+echo devices
+lsblk
+
+#services currently running
+echo services currently running
+systemctl list-units | grep running
+
+#serivces installed but not running
+echo service currently not running
+systemctl list-units | grep inactive

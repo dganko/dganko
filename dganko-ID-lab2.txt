@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo CHECK THE SESTATUS OF THE GATEWAY MACHINE
+sestatus
+
+echo CHECK THE IP ADDR OF THE GATEWAY MACHINE
+ip addr
+
+echo CHECK THE IP ROUTES OF THE GATEWAY MACHINE
+ip route
+
+echo CHECK THE iptables -L -v -n OF THE GATEWAY MACHINE
+iptables -L -v -n
+
