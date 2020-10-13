@@ -1,0 +1,218 @@
+Oct 13 08:53:14 localhost sshd[7677]: Accepted publickey for instructor from 172.16.0.1 port 37282 ssh2: RSA SHA256:QMy96Bymjtqkyayz7Av77aE23PqWehCLYM9/0n74kPY
+Oct 13 08:53:15 localhost systemd[7681]: pam_unix(systemd-user:session): session opened for user instructor by (uid=0)
+Oct 13 08:53:15 localhost sshd[7677]: pam_unix(sshd:session): session opened for user instructor by (uid=0)
+Oct 13 08:53:15 localhost sshd[7692]: Received disconnect from 172.16.0.1 port 37282:11: disconnected by user
+Oct 13 08:53:15 localhost sshd[7692]: Disconnected from user instructor 172.16.0.1 port 37282
+Oct 13 08:53:15 localhost sshd[7677]: pam_unix(sshd:session): session closed for user instructor
+Oct 13 08:53:15 localhost systemd[7686]: pam_unix(systemd-user:session): session closed for user instructor
+Oct 13 15:04:37 localhost sudo[7882]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/dnf -y update
+Oct 13 15:04:37 localhost sudo[7882]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:04:37 localhost sudo[7882]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:04:54 localhost useradd[7943]: failed adding user 'dbus', exit code: 9
+Oct 13 15:07:27 localhost sudo[7882]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:13:26 localhost sudo[48382]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/vi /etc/hostname
+Oct 13 15:13:26 localhost sudo[48382]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:13:26 localhost sudo[48382]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:13:40 localhost sudo[48382]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:14:06 David-VM2 polkitd[970]: Loading rules from directory /etc/polkit-1/rules.d
+Oct 13 15:14:06 David-VM2 polkitd[970]: Loading rules from directory /usr/share/polkit-1/rules.d
+Oct 13 15:14:06 David-VM2 polkitd[970]: Finished loading, compiling and executing 2 rules
+Oct 13 15:14:06 David-VM2 polkitd[970]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Oct 13 15:14:10 David-VM2 sshd[1004]: Server listening on 0.0.0.0 port 22.
+Oct 13 15:14:10 David-VM2 sshd[1004]: Server listening on :: port 22.
+Oct 13 15:14:26 David-VM2 systemd[5076]: pam_unix(systemd-user:session): session opened for user student by (uid=0)
+Oct 13 15:14:27 David-VM2 login[1052]: pam_unix(login:session): session opened for user student by LOGIN(uid=0)
+Oct 13 15:14:27 David-VM2 login[1052]: LOGIN ON tty1 BY student
+Oct 13 15:15:34 David-VM2 sudo[5221]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/dnf -y update
+Oct 13 15:15:34 David-VM2 sudo[5221]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:15:34 David-VM2 sudo[5221]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:15:36 David-VM2 sudo[5221]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:17:28 David-VM2 sudo[5230]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install wget
+Oct 13 15:17:28 David-VM2 sudo[5230]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:17:28 David-VM2 sudo[5230]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:17:31 David-VM2 sudo[5230]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:17:42 David-VM2 sudo[5537]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install poliicycoreutils-python-utils
+Oct 13 15:17:42 David-VM2 sudo[5537]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:17:42 David-VM2 sudo[5537]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:17:43 David-VM2 sudo[5537]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:17:50 David-VM2 sudo[5541]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install policycoreutils-python-utils
+Oct 13 15:17:50 David-VM2 sudo[5541]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:17:50 David-VM2 sudo[5541]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:17:56 David-VM2 sudo[5541]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:18:05 David-VM2 sudo[6013]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install httpd
+Oct 13 15:18:05 David-VM2 sudo[6013]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:18:05 David-VM2 sudo[6013]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:18:08 David-VM2 groupadd[6027]: group added to /etc/group: name=apache, GID=48
+Oct 13 15:18:08 David-VM2 groupadd[6027]: group added to /etc/gshadow: name=apache
+Oct 13 15:18:08 David-VM2 groupadd[6027]: new group: name=apache, GID=48
+Oct 13 15:18:08 David-VM2 useradd[6034]: new user: name=apache, UID=48, GID=48, home=/usr/share/httpd, shell=/sbin/nologin
+Oct 13 15:18:10 David-VM2 sudo[6013]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:18:23 David-VM2 sudo[6447]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install httpd-manual
+Oct 13 15:18:23 David-VM2 sudo[6447]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:18:23 David-VM2 sudo[6447]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:18:26 David-VM2 sudo[6447]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:19:26 David-VM2 sudo[6462]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/semodule -l
+Oct 13 15:19:26 David-VM2 sudo[6462]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:19:26 David-VM2 sudo[6462]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:19:27 David-VM2 sudo[6462]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:19:39 David-VM2 sudo[6466]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/semanage port -l
+Oct 13 15:19:39 David-VM2 sudo[6466]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:19:39 David-VM2 sudo[6466]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:19:40 David-VM2 sudo[6466]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:19:56 David-VM2 sudo[6470]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/semanage port -l
+Oct 13 15:19:56 David-VM2 sudo[6470]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:19:56 David-VM2 sudo[6470]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:19:57 David-VM2 sudo[6470]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:21:18 David-VM2 sudo[6475]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/dnf install httpd httpd-manual
+Oct 13 15:21:18 David-VM2 sudo[6475]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:21:18 David-VM2 sudo[6475]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:21:19 David-VM2 sudo[6475]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:23:30 David-VM2 sudo[6484]: student : TTY=tty1 ; PWD=/home/student/dganko ; USER=root ; COMMAND=/bin/mkdir lab3
+Oct 13 15:23:30 David-VM2 sudo[6484]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:23:30 David-VM2 sudo[6484]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:23:30 David-VM2 sudo[6484]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:23:53 David-VM2 sudo[6491]: student : TTY=tty1 ; PWD=/home/student/dganko/lab3 ; USER=root ; COMMAND=/bin/mkdir httpd
+Oct 13 15:23:53 David-VM2 sudo[6491]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:23:53 David-VM2 sudo[6491]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:23:53 David-VM2 sudo[6491]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:25:40 David-VM2 sudo[6502]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install apache
+Oct 13 15:25:40 David-VM2 sudo[6502]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:25:40 David-VM2 sudo[6502]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:25:41 David-VM2 sudo[6502]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:25:46 David-VM2 sudo[6506]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install apache
+Oct 13 15:25:46 David-VM2 sudo[6506]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:25:46 David-VM2 sudo[6506]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:25:47 David-VM2 sudo[6506]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:25:49 David-VM2 sudo[6510]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install httpd
+Oct 13 15:25:49 David-VM2 sudo[6510]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:25:49 David-VM2 sudo[6510]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:25:50 David-VM2 sudo[6510]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:26:23 David-VM2 sudo[6521]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/systemctl status apache
+Oct 13 15:26:23 David-VM2 sudo[6521]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:26:23 David-VM2 sudo[6521]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:26:23 David-VM2 sudo[6521]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:26:27 David-VM2 sudo[6525]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/systemctl status httpd
+Oct 13 15:26:27 David-VM2 sudo[6525]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:26:27 David-VM2 sudo[6525]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:26:27 David-VM2 sudo[6525]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:26:36 David-VM2 sudo[6529]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/systemctl start httpd
+Oct 13 15:26:36 David-VM2 sudo[6529]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:26:36 David-VM2 sudo[6529]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:26:36 David-VM2 sudo[6529]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:26:39 David-VM2 sudo[6749]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/systemctl status httpd
+Oct 13 15:26:39 David-VM2 sudo[6749]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:26:39 David-VM2 sudo[6749]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:26:39 David-VM2 sudo[6749]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:31:11 David-VM2 sudo[6778]: student : TTY=tty1 ; PWD=/etc/httpd/conf.d ; USER=root ; COMMAND=/bin/cp userdir.conf /home/student/dganko/lab3/httpd/userdir.conf-backup
+Oct 13 15:31:11 David-VM2 sudo[6778]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:31:11 David-VM2 sudo[6778]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:31:11 David-VM2 sudo[6778]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:32:42 David-VM2 sudo[6784]: student : TTY=tty1 ; PWD=/home/student/dganko/lab3/httpd ; USER=root ; COMMAND=/bin/vi userdir.conf-backup
+Oct 13 15:32:42 David-VM2 sudo[6784]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:32:42 David-VM2 sudo[6784]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:33:36 David-VM2 sudo[6784]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:34:07 David-VM2 sudo[6788]: student : TTY=tty1 ; PWD=/home/student/dganko/lab3/httpd ; USER=root ; COMMAND=/bin/diff userdir.conf-backup
+Oct 13 15:34:07 David-VM2 sudo[6788]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:34:07 David-VM2 sudo[6788]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:34:07 David-VM2 sudo[6788]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:34:16 David-VM2 sudo[6791]: student : TTY=tty1 ; PWD=/home/student/dganko/lab3/httpd ; USER=root ; COMMAND=/bin/diff userdir.conf-backup userdir.conf
+Oct 13 15:34:16 David-VM2 sudo[6791]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:34:16 David-VM2 sudo[6791]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:34:16 David-VM2 sudo[6791]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:34:53 David-VM2 sudo[6796]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/diff /etc/httpd/conf.d/userdir.conf
+Oct 13 15:34:53 David-VM2 sudo[6796]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:34:53 David-VM2 sudo[6796]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:34:53 David-VM2 sudo[6796]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:35:45 David-VM2 sudo[6799]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/diff /etc/httpd/conf.d/userdir.conf /home/student/dganko/lab3/httpd/userdir.conf-backup
+Oct 13 15:35:45 David-VM2 sudo[6799]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:35:45 David-VM2 sudo[6799]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:35:45 David-VM2 sudo[6799]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:37:06 David-VM2 sudo[6804]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/iptables -L
+Oct 13 15:37:06 David-VM2 sudo[6804]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:37:06 David-VM2 sudo[6804]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:37:06 David-VM2 sudo[6804]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:37:32 David-VM2 sudo[6807]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install iptables.services
+Oct 13 15:37:32 David-VM2 sudo[6807]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:37:32 David-VM2 sudo[6807]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:37:33 David-VM2 sudo[6807]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:37:37 David-VM2 sudo[6811]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install iptables
+Oct 13 15:37:37 David-VM2 sudo[6811]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:37:37 David-VM2 sudo[6811]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:37:38 David-VM2 sudo[6811]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:41:19 David-VM2 sudo[6817]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+Oct 13 15:41:19 David-VM2 sudo[6817]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:41:19 David-VM2 sudo[6817]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:41:19 David-VM2 sudo[6817]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:41:39 David-VM2 sudo[6826]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/iptables -A OUTPUT -p tcp --sport 80 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+Oct 13 15:41:39 David-VM2 sudo[6826]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:41:39 David-VM2 sudo[6826]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:41:39 David-VM2 sudo[6826]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:42:17 David-VM2 sudo[6829]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/iptables -L
+Oct 13 15:42:17 David-VM2 sudo[6829]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:42:17 David-VM2 sudo[6829]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:42:17 David-VM2 sudo[6829]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:45:37 David-VM2 sudo[6835]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/vi /var/www/html
+Oct 13 15:45:37 David-VM2 sudo[6835]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:45:37 David-VM2 sudo[6835]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:48:52 David-VM2 sudo[6835]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:48:58 David-VM2 sudo[6839]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/vi /var/www/html/index.html
+Oct 13 15:48:58 David-VM2 sudo[6839]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:48:58 David-VM2 sudo[6839]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:52:15 David-VM2 sudo[6839]: pam_unix(sudo:session): session closed for user root
+Oct 13 15:52:39 David-VM2 sudo[6843]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/systemctl restart httpd
+Oct 13 15:52:39 David-VM2 sudo[6843]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 15:52:39 David-VM2 sudo[6843]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 15:52:40 David-VM2 sudo[6843]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:06:19 David-VM2 sudo[7089]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/vi /home/student/dganko/public_html/index.html
+Oct 13 16:06:19 David-VM2 sudo[7089]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:06:19 David-VM2 sudo[7089]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:07:47 David-VM2 sudo[7089]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:08:19 David-VM2 sudo[7095]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/iptables -A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+Oct 13 16:08:19 David-VM2 sudo[7095]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:08:19 David-VM2 sudo[7095]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:08:19 David-VM2 sudo[7095]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:08:38 David-VM2 sudo[7098]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/iptables -A OUTPUT -p tcp --sport 22 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+Oct 13 16:08:38 David-VM2 sudo[7098]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:08:38 David-VM2 sudo[7098]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:08:38 David-VM2 sudo[7098]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:13:07 David-VM2 sudo[7102]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/iptables -L
+Oct 13 16:13:07 David-VM2 sudo[7102]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:13:07 David-VM2 sudo[7102]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:13:07 David-VM2 sudo[7102]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:14:12 David-VM2 sudo[7109]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/yum install nmap
+Oct 13 16:14:12 David-VM2 sudo[7109]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:14:12 David-VM2 sudo[7109]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:14:19 David-VM2 sudo[7109]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:14:22 David-VM2 sudo[7457]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/nmap -s -V http://localhost/
+Oct 13 16:14:22 David-VM2 sudo[7457]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:14:22 David-VM2 sudo[7457]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:14:22 David-VM2 sudo[7457]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:14:54 David-VM2 sudo[7462]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/nmap -s -V localhost
+Oct 13 16:14:54 David-VM2 sudo[7462]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:14:54 David-VM2 sudo[7462]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:14:54 David-VM2 sudo[7462]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:16:30 David-VM2 sshd[7474]: error: kex_exchange_identification: Connection closed by remote host
+Oct 13 16:17:32 David-VM2 sudo[7476]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/sbin/iptables -L
+Oct 13 16:17:32 David-VM2 sudo[7476]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:17:32 David-VM2 sudo[7476]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:17:32 David-VM2 sudo[7476]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:20:54 David-VM2 sudo[7483]: student : TTY=tty1 ; PWD=/home/student ; USER=root ; COMMAND=/bin/systemctl restart httpd
+Oct 13 16:20:54 David-VM2 sudo[7483]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:20:54 David-VM2 sudo[7483]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:20:55 David-VM2 sudo[7483]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:32:16 David-VM2 sudo[7727]: student : TTY=tty1 ; PWD=/home/student/dganko/lab3 ; USER=root ; COMMAND=/bin/mkdir log-backup
+Oct 13 16:32:16 David-VM2 sudo[7727]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:32:16 David-VM2 sudo[7727]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:32:16 David-VM2 sudo[7727]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:36:56 David-VM2 sudo[7741]: student : TTY=tty1 ; PWD=/home/student/dganko/lab3/log-backup ; USER=root ; COMMAND=/bin/cp /var/log/messages /home/student/dganko/lab3/log-backup
+Oct 13 16:36:56 David-VM2 sudo[7741]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:36:56 David-VM2 sudo[7741]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:36:56 David-VM2 sudo[7741]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:37:07 David-VM2 sudo[7744]: student : TTY=tty1 ; PWD=/home/student/dganko/lab3/log-backup ; USER=root ; COMMAND=/bin/cp /var/log/boot.log /home/student/dganko/lab3/log-backup
+Oct 13 16:37:07 David-VM2 sudo[7744]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:37:07 David-VM2 sudo[7744]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:37:07 David-VM2 sudo[7744]: pam_unix(sudo:session): session closed for user root
+Oct 13 16:37:15 David-VM2 sudo[7748]: student : TTY=tty1 ; PWD=/home/student/dganko/lab3/log-backup ; USER=root ; COMMAND=/bin/cp /var/log/maillog /home/student/dganko/lab3/log-backup
+Oct 13 16:37:15 David-VM2 sudo[7748]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 13 16:37:15 David-VM2 sudo[7748]: pam_unix(sudo:session): session opened for user root by student(uid=0)
+Oct 13 16:37:15 David-VM2 sudo[7748]: pam_unix(sudo:session): session closed for user root

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo SPR500 Lab3 Report
+echo David Ganko
+echo dganko
+echo 150462174
+
+ip r
+systemctl status httpd
+
+ls -l /var/log/
+echo number of active services
+systemctl list-unit-files | grep enabled | wc -l
+
+echo number of currently installed RPM packages
+rpm -qa | wc -l
+
+echo iptables
+iptables -nvL
+
+sestatus
+
